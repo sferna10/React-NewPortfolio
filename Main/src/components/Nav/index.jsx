@@ -16,7 +16,7 @@ return (
 {pages.map((Page) => (
 <li
     className={`mx-5 ${currentPage === `/${Page}` && 'navActive'}`}
-    Key={Page}
+    key={Page}
 >
 
     <Link to={`/${Page}`}>{capitalizeFirstLetter(Page)}</Link>
