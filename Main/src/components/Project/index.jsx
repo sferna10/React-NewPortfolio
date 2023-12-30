@@ -1,15 +1,29 @@
-import coverImage from '../../assets/cover/cover-image/jpg';
+import { removeHyphensAndCapitalize } from '../../utils/helpers';
+import * as projects from '../../assets';
 
-function Header(props) {
+function Project({ project }) {
+const { name, repo, link, description } = project;
 
-    return(
-        <header className="flex-row space-between px-1">
-            <h1> Silvia Fernandez</h1>
-            <h3> Professional Portfolio</h3>
-            <img src={coverImage} alt=""></img>
-            {props.children}
-             </header>
-    );
+return (
+<div className="project" key={name}>
+<img
+    src={projects[name]}
+    alt={removeHyphensAndCapitalize (name)}
+    className="project-bg"
+/>
+<div className="project-text">
+<h3>
+<a href={link}>{removeHyphensAndCapitalize (name)},</a>
+    &nbsp;
+    <a href={repo}>
+
+   <i className="fab fa-github" />
+</a>
+</h3>
+<p>{description}</p>
+</div>
+</div>
+);
 }
 
-export default Headeer;
+export default Project;
