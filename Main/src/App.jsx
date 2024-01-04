@@ -1,10 +1,14 @@
-import Header from "./components/Header";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
-import Page from "./components/Page";
-import { useLocation } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
+import Nav from './components/Nav';
 
 function App() {
-    const currentPage = useLocation().pathname;
-
+//The Oulet component will conditionally swap between the different pages according to the URL
+return (
+    <>
+    <Nav />
+    <Outlet />
+    </>
+);
 }
+
+export default App;

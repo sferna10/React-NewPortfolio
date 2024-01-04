@@ -1,5 +1,0 @@
-export { default as img1 } from './projects/img1.jpg';
-export { default as img2 } from './projects/img1w.jpg';
-export { default as img1 } from './projects/img1.jpg';
-export { default as img1 } from './projects/img1.jpg';
-export { default as img1 } from './projects/img1.jpg';
