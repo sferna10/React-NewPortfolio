@@ -1,6 +1,6 @@
 import coverImage from '../../assets/cover/cover-image.jpg';
 
-function Header (props) {
+function Header(props) {
 
 return (
 <header className="flex-row space-between px-1">
