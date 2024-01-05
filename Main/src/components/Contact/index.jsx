@@ -1,6 +1,7 @@
 import { useState } from "reac";
 
 import { validateEmail } from "../../utils/helpers";
+import { useEffect } from "react";
 
 function Contact() {
   const [formState, setFormState] = useState({
@@ -15,9 +16,18 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
-      console.log("Submit Form", formState);
+      console.log("Submit Form success with no error", formState);
     }
-  };
+    setFormState({ name: '',
+    email: '',
+    message: '',});
+};
+
+  useEffect(()=>{
+
+  },[formState]
+
+  );
 
   const handleChange = (e) => {
     if (e.target.name === "email") {
@@ -50,6 +60,7 @@ function Contact() {
             name="name"
             defaultValue={name}
             onBlur={handleChange}
+            value={name}
           />
         </div>
         <div>
@@ -59,6 +70,7 @@ function Contact() {
             name="email"
             defaultValue={email}
             onBlur={handleChange}
+            value={name}
           />
         </div>
         {errorMessage && (
