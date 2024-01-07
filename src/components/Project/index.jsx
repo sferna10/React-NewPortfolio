@@ -1,13 +1,13 @@
 import { removeHyphensAndCapitalize } from '../../utils/helpers';
-import * as projects from '../../assets';
+import * as Project from '../../assets';
 
-function Project({ project }) {
-const { name, repo, link, description } = project;
+function Project({ Project }) {
+const { name, repo, link, description } = Project;
 
 return (
 <div className="project" key={name}>
 <img
-    src={projects[name]}
+    src={project[name]}
     alt={removeHyphensAndCapitalize (name)}
     className="project-bg"
 />

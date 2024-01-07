@@ -38,10 +38,8 @@ const [projects] = useState([
 {   name: 'Professiona_README_generator',
     description: 'JavaScript',
     link: "https://github.com/sferna10/Professional_README_generator",
-    repo: " https://sferna10.github.io/Professional_README_generator/"
-    description: 'JavaScript',
-    link: "https://github.com",
-    repo: "https://github.com"
+    repo: " https://sferna10.github.io/Professional_README_generator/",
+
 },
 {   name: 'E-commerce-Back_End',
     description: 'JavaScript',
