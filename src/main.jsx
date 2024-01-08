@@ -7,6 +7,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+//import Footer from "./components/Footer";
 import "./index.css";
 
 //Define the accessible routes, and which components respond to with URL

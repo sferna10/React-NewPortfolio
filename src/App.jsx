@@ -15,7 +15,7 @@ return (
         <main>
         <Page currentPage={currentPage} />
         </main>
-        <Footer />
+        {<Footer /> }
     </div>
 );
 }
