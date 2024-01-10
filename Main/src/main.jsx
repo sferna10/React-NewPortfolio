@@ -2,11 +2,11 @@ import ReactDOM from "react-dom/client";
 // Bringing in the required imports from 'react-router-dom' to set up application routing behavior
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
-import ErrorPage from "./components/ErrorPage";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Resume from "./components/Resume";
+import ErrorPage from "./components/ErrorPage/index.jsx";
+import About from "./components/About/index.jsx";
+import Portfolio from "./components/Portfolio/index.jsx";
+import Contact from "./components/Contact/index.jsx";
+import Resume from "./components/Resume/index.jsx";
 //import Footer from "./components/Footer";
 import "./index.css";
 
